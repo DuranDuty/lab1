@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1-2</title>
+</head>
+<body>
+    <img id="img" src="images/pic1.jpg" width="200" height="200" alt="Картинка">
+    <br></br>
+    <p id="txt">Картинка</p>
+    <br></br>
+    <button type="button" onclick="clickHandler1()">Размер</button>
+    <br></br>
+    <button type="button" onclick="clickHandler2()">Фон</button>
+    <br></br>
+    <button type="button" onclick="clickHandler3()">Шрифт</button>
+<script>
+    function clickHandler1() {
+      var img = document.getElementById('img');
+      img.style.width = '300px'
+      img.style.height = '300px'
+    }
+    function clickHandler2() {
+        document.body.style.backgroundColor = "#AA0000"
+    }
+    function clickHandler3() {
+      var text = document.getElementById('txt');
+      text.style.fontSize = "60px"
+    }
+</script>
+</body>
+</html>
